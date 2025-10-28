@@ -1,4 +1,4 @@
-# Accelerating-Conformal-Prediction-via-Approximate-Leave-One-Out
+# Accelerating_Conformal_Prediction_via_Approximate_Leave-One-Out
 Code for the numerical experiments section of the paper ''Accelerating Conformal Prediction via Approximate Leave-One-Out''.
 
 
