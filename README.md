@@ -21,9 +21,11 @@ Simulation code for Jackknife-minmax and Fast Jackknife-minmax when λ = 0.1.
 simulationjkminmaxlambda1.m
 Simulation code for Jackknife-minmax and Fast Jackknife-minmax when λ = 1.
 
+
+The real data folder contains the data and code for conducting experiments on the Concrete Compressive Strength Dataset(Yeh, 1998) and the Energy Efficiency Dataset(Tsanas & Xifara, 2012). 
+The code for 
+
+
 Usage:
 Simply open any .m file in MATLAB and run it.
 Each script will automatically generate the results corresponding to the numerical experiments described in the paper.
-
-In the real data folder.
-
