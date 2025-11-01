@@ -24,10 +24,9 @@ for p=P_number
         number_jkapp=0;
         j_i=zeros(n_test,1);
         beta = randn(p, 1);
-        beta = beta / norm(beta) * sqrt(10);
-        X=randn(n_train,p);
+        X=randn(n_train,p)/ sqrt(p);
         Y_train = X * beta + randn(n_train, 1);
-        X_test=randn(n_test,p);
+        X_test=randn(n_test,p)/ sqrt(p);
         Y_test=X_test*beta+randn(n_test,1);
         R_loo=zeros(n_train,1);%originial R_loo
         R_hat_loo=zeros(n_train,1);%R_loo constructed by approximate estimator
@@ -149,13 +148,7 @@ function [theta, fval, exitflag, output] = fit_fast(X, Y, lambda, theta0)
     opts = optimoptions('fminunc', ...
         'Algorithm','quasi-newton', ...
         'Display','off', ...
-        'MaxIterations',80, ...
-        'MaxFunctionEvaluations',5000, ...
-        'OptimalityTolerance',1e-3, ...
-        'FunctionTolerance',1e-4, ...
-        'StepTolerance',1e-8, ...
         'SpecifyObjectiveGradient',true);
-
     [theta, fval, exitflag, output] = fminunc(fun, theta0, opts);
 end
 function [f, g] = obj_grad(theta, X, Y, lambda)
@@ -174,4 +167,5 @@ function Hreg = hessian(theta, lambda)
     t2 = theta.^2;
     diag_entries = 1 + 0.5 * (1 + t2/4).^(-3/2);
     Hreg = lambda * diag(diag_entries);
+
 end
