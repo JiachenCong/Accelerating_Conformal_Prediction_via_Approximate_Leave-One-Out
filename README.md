@@ -1,6 +1,7 @@
 # Accelerating_Conformal_Prediction_via_Approximate_Leave-One-Out
 Code for the numerical experiments section of the paper ''Accelerating Conformal Prediction via Approximate Leave-One-Out''.
 
+The computation result of this part can be found in the document 'result.pdf' in this repository.
 
 The simulation folder contains MATLAB scripts corresponding to the Synthetic data section of the paper.
 
