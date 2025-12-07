@@ -9,16 +9,16 @@ Each file represents one specific simulation setting discussed in the paper.
 
 File Descriptions:
 
-simulationjkpluslambda01.m
+jkp_L01.m
 Simulation code for Jackknife+ and Fast Jackknife+ when λ = 0.1.
 
-simulationjkpluslambda1.m
+jkp_L1.m
 Simulation code for Jackknife+ and Fast Jackknife+ when λ = 1.
 
-simulationjkminmaxlambda01.m
+jkmm_L01.m
 Simulation code for Jackknife-minmax and Fast Jackknife-minmax when λ = 0.1.
 
-simulationjkminmaxlambda1.m
+jkmm_L1.m
 Simulation code for Jackknife-minmax and Fast Jackknife-minmax when λ = 1.
 
 
